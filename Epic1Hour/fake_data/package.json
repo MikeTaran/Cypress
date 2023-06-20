@@ -1,0 +1,19 @@
+{
+  "name": "fake_data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^9.7.0"
+  },
+  "dependencies": {
+    "terracotta-warrior": "^1.0.2"
+  }
+}

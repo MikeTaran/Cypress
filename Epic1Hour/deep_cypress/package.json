@@ -1,0 +1,17 @@
+{
+  "name": "deep_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tiny-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "node-wget": "^0.4.3",
+    "tiny-server": "^1.1.1"
+  }
+}
