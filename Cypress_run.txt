@@ -1,0 +1,34 @@
+!!!Cypress first run!!!
+
+1. Создание папки проекта cypressProject
+2. Открываем в VS code эту папку и в новом терминале набираем:
+	npm init -y    //y - автоподтверждение всех вопросов
+инициализация проекта, везде подтверждаем enter. Получаем package.json.
+3. Инсталяция Cypress:
+	npm install cypress --save-dev   // или
+	npm install -D cypress           // dev dependancy
+	npm install -S cypress           // на product
+4. Запуск и конфигурация:
+	npx cypress open    // первый запуск
+	npx cypress run     // запуск непосредственно в VSC
+// варианты запуска:
+	./node_modules/.bin/cypress
+	$(npm bin)/cypress open
+5. E2E => браузер
+6. В VC code в папке E2E cоздаем файл тестов firstTest.cy.js
+7. Тестирование сайта "OpenWeather":
+/// <reference types="cypress" />   // подсказки синтаксиса
+// набор тестов
+describe('openNewTests', () => {
+   // pre-conditions
+   beforeEach(() => {
+      // run for each test-case
+      cy.visit('https://openweathermap.org/');
+	  cy.viewport(1280, 920);
+   });
+   // test-cases start
+	it('Test description', () => {
+      // code here
+   });
+   // test-cases end
+})
